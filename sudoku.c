@@ -44,10 +44,10 @@ void print_node(Node* n){
 }
 
 int is_valid(Node* n){
-  int num;
+  int num = 0;
   for(int i = 0 ; i < 9 ; i++)
   {
-    int* arreglo = (int*)calloc(10,sizeof(int));
+    int arreglo[10] = {};
     for(int j = 0 ; j < 9 ; j++)
     {
       num = n->sudo[i][j];
@@ -67,7 +67,7 @@ int is_valid(Node* n){
   }
   for(int i = 0 ; i < 9 ; i++)
   {
-    int* arreglo = (int*)calloc(10,sizeof(int));
+    int arreglo[10] = {};
     for(int j = 0 ; j < 9 ; j++)
     {
       num = n->sudo[j][i];
