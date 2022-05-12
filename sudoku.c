@@ -64,19 +64,22 @@ List* get_adj_nodes(Node* n)
   int i,j;
    for(i=0;i<9;i++)
   {
-  int numero = 0;
+  int numero = 1;
    for(j=0;j<9;j++)
    {
       if(n->sudo[i][j] == 0)
       {
-        while(numero != 9)
+        for(numero = 1 ; numero < 10 ; numero++)
         {
-          numero += 1;
-          Node *adj_n = (Node*) malloc(sizeof(Node));
-          adj_n = copy(n);
-          adj_n->sudo[i][j] = numero;
-          pushBack(list, adj_n);
+          n->sudo[i][j] = numero;
+          if(is_valid(n))
+          {
+            Node *adj_n = copy(n);
+            pushBack(list, adj_n);
+          }
         }
+        n->sudo[i][j] = 0;
+        return list;
       }
     }
   }
