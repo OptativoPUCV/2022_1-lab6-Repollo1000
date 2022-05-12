@@ -54,7 +54,7 @@ int is_valid(Node* n){
       for(int f = 0 ; f < 9 ; f++)
       {
         if(num == n->sudo[i][f])  
-          return 0;
+          return 1;
       }      
     }
   }
@@ -67,7 +67,7 @@ int is_valid(Node* n){
       for(int f = 0 ; f < 9 ; f++)
       {
         if(num == n->sudo[f][j])  
-          return 0;
+          return 1;
       }      
     }
   }
