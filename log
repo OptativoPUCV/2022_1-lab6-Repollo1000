@@ -38,3 +38,9 @@ sudoku.c:64:12: error: ‘new_move’ undeclared (first use in this function); d
 sudoku.c:64:12: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 4933c0b
+Thu May 12 03:00:09 UTC 2022: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|5
+total_score: 0/70
+1f51d23
