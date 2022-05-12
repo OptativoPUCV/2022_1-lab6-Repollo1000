@@ -44,7 +44,7 @@ void print_node(Node* n){
 }
 
 int is_valid(Node* n){
-  int num = 0;
+  //int num = 0;
   for(int i = 0 ; i < 9 ; i++)
   {
     int arreglo[10] = {};
@@ -92,7 +92,7 @@ int is_valid(Node* n){
   }
   for(int k = 0 ; k < 9 ; k++)
   {
-    //int* arreglo = (int*)calloc(10,sizeof(int));
+    int* arreglo = (int*)calloc(10,sizeof(int));
     for(int p=0;p<9;p++)
     {
       int i=3*(k/3) + (p/3) ;
