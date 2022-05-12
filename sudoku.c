@@ -59,16 +59,18 @@ List* get_adj_nodes(Node* n){
        {
          //printf("%d\n",new_move);
          //new_move += 1;
-         if(n->sudo[i][j] == 0)
-         {
-            
-            numero += 1;
-            Node *adj_n = (Node*) malloc(sizeof(Node));
-            adj_n = copy(n);
-            adj_n->sudo[i][j] = numero;
-            printf("%d ",numero);
-            pushBack(list, adj_n);
-         }
+          if(n->sudo[i][j] == 0)
+          {
+            while(numero != 9)
+            {
+              numero += 1;
+              Node *adj_n = (Node*) malloc(sizeof(Node));
+              adj_n = copy(n);
+              adj_n->sudo[i][j] = numero;
+              printf("%d ",numero);
+              pushBack(list, adj_n);
+            }
+          }
         }
         printf("\n");
       }
