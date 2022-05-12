@@ -14,3 +14,9 @@ sudoku.c:67:13: error: implicit declaration of function ‘push_back’; did you
 cc1: all warnings being treated as errors
 Compilation failed
 65969d3
+Thu May 12 02:54:40 UTC 2022: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|5
+total_score: 0/70
+2a3d291
