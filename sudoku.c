@@ -57,8 +57,6 @@ List* get_adj_nodes(Node* n){
         int numero = 0;
        for(j=0;j<9;j++)
        {
-         //printf("%d\n",new_move);
-         //new_move += 1;
           if(n->sudo[i][j] == 0)
           {
             while(numero != 9)
@@ -72,7 +70,6 @@ List* get_adj_nodes(Node* n){
             }
           }
         }
-        printf("\n");
       }
 
     return list;
