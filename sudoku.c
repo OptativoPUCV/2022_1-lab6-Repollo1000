@@ -55,7 +55,7 @@ List* get_adj_nodes(Node* n){
   
      for(i=0;i<9;i++)
       {
-        int new_move = 0;
+        //int new_move = 0;
        for(j=0;j<9;j++)
        {
          //new_move += 1;
