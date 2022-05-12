@@ -385,3 +385,14 @@ Thu May 12 22:48:14 UTC 2022:
  tests:  2|4
 total_score: 15/70
 ea0e849
+Thu May 12 22:49:41 UTC 2022: 
+ sudoku.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:47:7: error: variable ‘num’ set but not used [-Werror=unused-but-set-variable]
+   int num = 0;
+       ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+be0d001
