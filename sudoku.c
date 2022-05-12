@@ -45,22 +45,18 @@ void print_node(Node* n){
 
 int is_valid(Node* n){
 
-  //int array[10];
-  
-  for(int k=0 ; k<9 ; k++)
+  int num;
+  for(int i = 0 ; i < 9 ; i++)
   {
-    for(int f ; f < 9 ; f++)
+    int* arreglo = (int*)calloc(10,sizeof(int));
+    for(int j ; j < 9 ; j++)
     {
-      int p;
-      for(p=0;p<9;p++)
+      num = n->sudo[i][j];
+      for(int f = 0 ; f < 9 ; f++)
       {
-        int i=3*(k/3) + (p/3) ;
-        int j=3*(k%3) + (p%3) ;
-        //printf("%d ",n->sudo[i][j]);
-        //if(p%3 == 2) printf("\n");
-        if(n->sudo[f][f] == n->sudo[i][j])
+        if(num == n->sudo[i][f])
           return 0;
-      }
+      }      
     }
   }
   return 1;
