@@ -171,3 +171,14 @@ Thu May 12 15:32:29 UTC 2022:
  tests:  2|4
 total_score: 15/70
 d2c3ce8
+Thu May 12 15:42:30 UTC 2022: 
+ sudoku.c | 9 ++++++---
+ 1 file changed, 6 insertions(+), 3 deletions(-)
+In file included from test.c:5:0:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:48:7: error: unused variable ‘array’ [-Werror=unused-variable]
+   int array[10];
+       ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+be7759d
