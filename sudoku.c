@@ -50,11 +50,6 @@ int is_valid(Node* n){
     int arreglo[10] = {};
     for(int j = 0 ; j < 9 ; j++)
     {
-      for(int a = 0; a<10 ;a ++)
-      {
-        printf("%d",arreglo[a]);
-      }
-      printf("\n");
       num = n->sudo[i][j];
       if(num != 0 )
       {
@@ -67,7 +62,6 @@ int is_valid(Node* n){
       }
       
     }
-    printf("\n");
   }
   for(int j = 0 ; j < 9 ; j++)
   {
@@ -75,11 +69,6 @@ int is_valid(Node* n){
     for(int i = 0 ; i < 9 ; i++)
     {
       num = n->sudo[i][j];
-      for(int a = 0; a<10 ;a ++)
-      {
-        printf("%d",arreglo[a]);
-      }
-      printf("\n");
       if(num != 0 )
       {
         if(arreglo[num]==1)
@@ -90,7 +79,6 @@ int is_valid(Node* n){
         }
       }  
     }
-    printf("\n");
   }
   for(int k = 0 ; k < 9 ; k++)
   {
@@ -107,8 +95,8 @@ int is_valid(Node* n){
         else
           arreglo[num] = 1;        
       }
-      printf("%d ",n->sudo[i][j]);
-      if(p%3 == 2) printf("\n");
+      //printf("%d ",n->sudo[i][j]);
+      //if(p%3 == 2) printf("\n");
     }
   } 
   
