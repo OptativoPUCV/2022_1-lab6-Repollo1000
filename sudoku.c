@@ -61,11 +61,12 @@ List* get_adj_nodes(Node* n){
          //new_move += 1;
          if(n->sudo[i][j] == 0)
          {
-            printf("%d ",numero);
+            
             numero += 1;
             Node *adj_n = (Node*) malloc(sizeof(Node));
             adj_n = copy(n);
             adj_n->sudo[i][j] = numero;
+            printf("%d ",numero);
             pushBack(list, adj_n);
          }
         }
