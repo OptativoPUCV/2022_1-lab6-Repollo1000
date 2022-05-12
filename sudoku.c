@@ -50,6 +50,10 @@ int is_valid(Node* n){
     int* arreglo = (int*)calloc(10,sizeof(int));
     for(int j = 0 ; j < 9 ; j++)
     {
+      for(int a = 0; a<10 ;a ++)
+      {
+        printf("%d",arreglo[num]);
+      }
       num = n->sudo[i][j];
       if(arreglo[num]==1)
         return 0;
