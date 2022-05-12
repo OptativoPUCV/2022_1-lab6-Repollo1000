@@ -427,3 +427,14 @@ sudoku.c:47:7: error: unused variable ‘num’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 67bc633
+Thu May 12 22:59:32 UTC 2022: 
+ sudoku.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:47:7: error: unused variable ‘num’ [-Werror=unused-variable]
+   int num = 0;
+       ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+7a02407
