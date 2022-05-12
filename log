@@ -444,3 +444,28 @@ Thu May 12 22:59:43 UTC 2022:
  tests:  2|4
 total_score: 15/70
 fb5ae3c
+Thu May 12 23:00:30 UTC 2022: 
+ sudoku.c | 20 +++++++++++++++-----
+ 1 file changed, 15 insertions(+), 5 deletions(-)
+In file included from test.c:5:0:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:100:25: error: expected expression before ‘!=’ token
+       if(n->sudo[i][j]) != 0 )
+                         ^~
+sudoku.c:100:7: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+       if(n->sudo[i][j]) != 0 )
+       ^~
+sudoku.c:100:30: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+       if(n->sudo[i][j]) != 0 )
+                              ^
+sudoku.c:100:30: error: expected statement before ‘)’ token
+sudoku.c:102:12: error: ‘arreglo’ undeclared (first use in this function)
+         if(arreglo[j]==1)
+            ^~~~~~~
+sudoku.c:102:12: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:47:7: error: unused variable ‘num’ [-Werror=unused-variable]
+   int num = 0;
+       ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+c62fc5b
