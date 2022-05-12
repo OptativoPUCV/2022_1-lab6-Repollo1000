@@ -51,18 +51,18 @@ int is_valid(Node* n){
     for(int j = 0 ; j < 9 ; j++)
     {
       num = n->sudo[i][j];
-        for(int a = 0; a<10 ;a ++)
-        {
-          printf("%d ",arreglo[num]);
-        }
-        printf("\n");   
+      for(int a = 0; a<10 ;a ++)
+      {
+        printf("%d ",arreglo[a]);
+      }
+      printf("\n");   
+      
       if(arreglo[num]==1)
         return 0;
       else
       {
         arreglo[num] = 1;     
       }
-
     }
   }
   for(int i = 0 ; i < 9 ; i++)
