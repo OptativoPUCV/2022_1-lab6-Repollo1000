@@ -51,7 +51,7 @@ int is_valid(Node* n){
     for(int j = 0 ; j < 9 ; j++)
     {
       num = n->sudo[i][j];
-      if(arreglo[num]==1)
+      if(arreglo[num]==0)
         return 0;
       else
         arreglo[num] = 1;
