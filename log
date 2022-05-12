@@ -273,3 +273,14 @@ Thu May 12 21:22:45 UTC 2022:
  tests:  2|4
 total_score: 15/70
 da656f6
+Thu May 12 22:21:57 UTC 2022: 
+ sudoku.c | 24 +++++++++++++++++-------
+ 1 file changed, 17 insertions(+), 7 deletions(-)
+In file included from test.c:5:0:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:76:9: error: ‘p’ undeclared (first use in this function)
+     for(p=0;p<9;p++)
+         ^
+sudoku.c:76:9: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+51a7246
