@@ -57,11 +57,11 @@ int is_valid(Node* n){
       }
       printf("\n");   
       
-      if(arreglo[num]==1)
+      if(arreglo[j]==1)
         return 0;
       else
       {
-        arreglo[num] = 1;     
+        arreglo[j] = 1;     
       }
     }
   }
