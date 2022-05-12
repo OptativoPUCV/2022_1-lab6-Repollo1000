@@ -314,3 +314,14 @@ Thu May 12 22:29:27 UTC 2022:
  tests:  2|4
 total_score: 15/70
 b0bb017
+Thu May 12 22:34:49 UTC 2022: 
+ sudoku.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+In file included from test.c:5:0:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:78:10: error: unused variable ‘arreglo’ [-Werror=unused-variable]
+     int* arreglo = (int*)calloc(10,sizeof(int));
+          ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+cf3768b
