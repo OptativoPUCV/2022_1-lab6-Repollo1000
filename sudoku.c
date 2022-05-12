@@ -57,6 +57,7 @@ List* get_adj_nodes(Node* n){
       {
        for(j=0;j<9;j++)
        {
+         printf("%d",new_move);
          //new_move += 1;
          if(n->sudo[i][j] == 0)
          {
