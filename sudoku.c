@@ -54,7 +54,7 @@ List* get_adj_nodes(Node* n){
     int i,j;
      for(i=0;i<9;i++)
       {
-        int numero = 0;
+      int numero = 0;
        for(j=0;j<9;j++)
        {
           if(n->sudo[i][j] == 0)
@@ -65,7 +65,6 @@ List* get_adj_nodes(Node* n){
               Node *adj_n = (Node*) malloc(sizeof(Node));
               adj_n = copy(n);
               adj_n->sudo[i][j] = numero;
-              printf("%d ",numero);
               pushBack(list, adj_n);
             }
           }
