@@ -2,3 +2,15 @@ Thu May 12 00:23:39 UTC 2022:
  tests:  0|5
 total_score: 0/70
 bbaa8ee
+Thu May 12 02:53:52 UTC 2022: 
+ sudoku.c | 18 ++++++++++++++++++
+ 1 file changed, 18 insertions(+)
+In file included from test.c:5:0:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:67:13: error: implicit declaration of function ‘push_back’; did you mean ‘pushBack’? [-Werror=implicit-function-declaration]
+             push_back(list, adj_n);
+             ^~~~~~~~~
+             pushBack
+cc1: all warnings being treated as errors
+Compilation failed
+65969d3
