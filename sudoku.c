@@ -54,21 +54,22 @@ List* get_adj_nodes(Node* n){
     int i,j;
      for(i=0;i<9;i++)
       {
-        int new_move = 0;
+        int numero = 0;
        for(j=0;j<9;j++)
        {
          //printf("%d\n",new_move);
          //new_move += 1;
          if(n->sudo[i][j] == 0)
          {
-           printf("%d\n",new_move);
-            new_move += 1;
+            printf("%d ",numero);
+            numero += 1;
             Node *adj_n = (Node*) malloc(sizeof(Node));
             adj_n = copy(n);
-            adj_n->sudo[i][j] = new_move;
+            adj_n->sudo[i][j] = numero;
             pushBack(list, adj_n);
          }
         }
+        printf("\n");
       }
 
     return list;
