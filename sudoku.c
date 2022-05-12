@@ -48,13 +48,13 @@ int is_valid(Node* n){
   int num;
   for(int i = 0 ; i < 9 ; i++)
   {
-    int* arreglo = (int*)calloc(10,sizeof(int));
+    //int* arreglo = (int*)calloc(10,sizeof(int));
     for(int j ; j < 9 ; j++)
     {
       num = n->sudo[i][j];
       for(int f = 0 ; f < 9 ; f++)
       {
-        if(num == n->sudo[i][f])
+        if(num == n->sudo[i][f])  
           return 0;
       }      
     }
