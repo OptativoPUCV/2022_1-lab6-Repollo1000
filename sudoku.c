@@ -165,7 +165,7 @@ Node* DFS(Node* initial, int* cont)
   {
     Node* n = top(S);
     pop(S);
-    *cont = *cont -1;
+    *cont = *cont - 1;
     if(is_final(n) == 1) return n;
     
     List* adj = get_adj_nodes(n);
@@ -174,7 +174,7 @@ Node* DFS(Node* initial, int* cont)
     {
       push(S,aux);
       aux=next(adj);
-      *cont = *cont+1;
+      //*cont = *cont+1;
     }
   }
   return NULL;
