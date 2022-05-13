@@ -147,13 +147,11 @@ int is_final(Node* n){
         flag = 1;
       }
       else
-        flag = 0;
+        return 0;
     }
   }
   if(flag == 1)
     return 1;
-  else
-    return 0;
 
   return 0;
 }
