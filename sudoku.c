@@ -136,11 +136,13 @@ List* get_adj_nodes(Node* n)
 
 int is_final(Node* n){
   int flag = 0;
+  int num = 0;
   for(int i = 0 ; i < 9 ; i++)
   {
     for(int j = 0 ; j < 9 ; j++)
     {
-      if(n->sudo[i][j] != 0 )
+      num = n->sudo[i][j];
+      if(num != 0 )
       {
         flag = 1;
       }
